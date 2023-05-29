@@ -23,7 +23,7 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
-          <a href="index.html">click para ingresar</a>
+          <a href="inicio.html">click para ingresar</a>
         </p>
       </div>
       <p className="read-the-docs">
