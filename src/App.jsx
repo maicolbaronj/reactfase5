@@ -23,6 +23,7 @@ function App() {
         </button>
         <p>
           <h4>Integrante: Maicol Barón</h4>
+          <h4>Proyecto de sitio Web 2023 - 1391</h4>
           <h6>Enlace al proyecto:</h6>
           <a href="inicio.html">click para ingresar</a>
         </p>
