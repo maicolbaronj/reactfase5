@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 4</title>
+
+    <!-- Código via CDN bootstrap, se conecta a un servidor y descarga la información -->
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contenedor">
+    <header>
+        <h1 class="centrado">
+            Box Model
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Nuestros Temas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tema1.html">Tema 1</a></li>
+                            <li><a class="dropdown-item" href="tema2.html">Tema 2</a></li>
+                            <li><a class="dropdown-item" href="tema3.html">Tema 3</a></li>
+                            <li><a class="dropdown-item" href="tema4.html">Tema 4</a></li>
+                            <li><a class="dropdown-item" href="tema5.html">Tema 5</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mi Audio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="audio1.html">Audio</a></li>
+                            
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cuestionario
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cuestionario1.html">Cuestionario 1</a></li>
+                            <li><a class="dropdown-item" href="cuestionario2.html">Cuestionario 2</a></li>
+                            
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="nosotros1.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- menu anterior, antes de usar bootstrap -->
+    <!-- <nav>
+        <ul class="menu-horizontal">
+            <li> <a href="index.html">Inicio</a> </li>
+            <li> <a href="audio.html">Audio</a> </li>
+            <li> <a href="tema.html">Tema</a> </li>
+        </ul>
+    </nav> -->
+    <aside>
+        <ul class="menu-aside">
+            <li> <a href="index.html">Inicio</a> </li>
+            <li> <a href="audio1.html">Audio del Tema</a> </li>
+            <li> <a href="tema3.html">El Tema</a> </li>
+            <li> <a href="cuestionario1.html">Cuestionario del Tema</a> </li>
+            <li> <a href="nosotros1.html">Nosotros</a> </li>
+        </ul>
+    </aside>
+    <main>
+        <section>
+            <h2>
+                🧐 Introducción al modelo de caja
+            </h2>
+
+            <p>
+                El nombre 'box-model' (modelo de caja) se llama así porque, en los navegadores, todo se construye a
+                partir
+                de cajas. <br><br>
+
+                Entonces, lo primero que debemos de entender, es que cada elemento que definimos en un documento HTML se
+                mostrará en el navegador como una caja rectangular esta es la forma en que se representan todos los
+                elementos, no existen elementos triangulares, redondos, poligonales etc. Todos los elementos en HTML por
+                defecto son rectangulares ya que internamente el navegador dibuja un rectángulo. <br><br>
+
+                ⚠️ Las únicas excepciones son las listas y las tablas, que generan más de una caja, y los elementos con
+                display: none o display: contents, que no crean ninguna caja. <br><br>
+
+                Aunque usted visualice en un sitio web algún elemento diseñado en CSS que utiliza border-radius para
+                parecer
+                un círculo, ese elemento seguirá siendo rectangular y esto es porque como he dicho anteriormente cada
+                elemento del diseño web es una caja, el navegador renderiza cada elemento de la página web como un
+                elemento
+                rectangular y con CSS nosotros definimos las propiedades como el tamaño, el color, los estilos, el
+                margen y
+                mucho más de estos elementos rectangulares. <br><br>
+
+                Esto puedes comprobarlo con el siguiente ejemplo, con ayuda de la propiedad outline, podemos ver todos
+                los
+                elementos de la pagina de inicio de Google de forma rectangular y esto lo puedes hacer con cualquier
+                otro
+                sitio web. <br><br>
+            </p>
+
+            <img src="imagen/outline.png" alt="outline">
+
+            <p>
+                Como ya lo mencione anteriormente cada elemento HTML en una página web es una caja, pero hay dos tipos
+                básicos de cajas: <br>
+                <li>Block boxes.</li>
+                <li>Inline boxes.</li>
+                <br>
+                Estos dos tipos de cajas, existieron desde el principio de la web: <br><br>
+
+            </p>
+        </section>
+    </main>
+    <footer class="centrado">
+        <p>
+            Esta página fue desarrollada por el equipo de Diseño de Sitios Web de la Universidad Nacional Abierta y a
+            Distancia por el grupo 1391. <br>
+            Fecha de actualización: 7 de Abril del 2023. <br>
+            @ Derechos reservados
+        </p>
+    </footer>
+</body>
+
+</html>

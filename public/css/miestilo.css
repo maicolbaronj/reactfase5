@@ -1,0 +1,22 @@
+*{
+    margin: 20px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    background-color: gray
+}
+
+#encabezado2 {
+    text-align: left;
+    color: white;
+    background-color: black
+}
+
+/* Cualquier elemento que le ponga una clase con este nombre "centradito" se aplicara */
+.centradito {
+    text-align: right;
+    background-color: aqua;
+}
